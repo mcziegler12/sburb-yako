@@ -1810,6 +1810,7 @@ index.html
 index2.html
 index_pw.html
 index_shogun.html
+jr_image_text.txt
 land_of_retribution_and_smiths.html
 land_of_rods_and_screens.html
 landing.html
@@ -1820,6 +1821,7 @@ manifest/testtext.txt
 manifest/testtext2.txt
 models/overcoat.obj
 music_credits.html
+navbar.txt
 newsposts.html
 npcTests.html
 observatory.html
@@ -1949,9 +1951,11 @@ shaders/tentacle.vert
 sources
 support.html
 test.html
+testAlchemy.html
 test_fraymotif.html
 testjs.html
 themes.html
+tmp.txt
 todo.html
 tools/hex_viewer/hex_viewer.dart.js
 tools/hex_viewer/index.html
