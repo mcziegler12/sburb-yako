@@ -28,7 +28,7 @@ export "GameEntities/Stats/stat.dart";
 export "GameEntities/Stats/statholder.dart";
 export "formats/FileFormat.dart";
 export "loader/loader.dart";
-export "fraymotif.dart";
+export "Fraymotif.dart";
 export "FraymotifEffect.dart";
 export "Lands/Theme.dart";
 export "Lands/Feature.dart";

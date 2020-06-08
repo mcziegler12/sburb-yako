@@ -3033,7 +3033,7 @@ $.rm.appendChild(q)
 p=$.t4()
 p.toString
 P.bm("render form for scene")
-o=new Z.kg(p)
+o=new L.kg(p)
 r=o.a=r.createElement("div")
 r.classList.add("SceneDiv")
 q.appendChild(r)
@@ -3641,6 +3641,22 @@ _.b=b
 _.c=c
 _.d=d},
 jf:function jf(){},
+kb:function kb(a,b,c,d){var _=this
+_.b=_.a=null
+_.c=a
+_.d=b
+_.f=c
+_.x=d},
+kg:function kg(a){var _=this
+_.f=_.e=_.d=_.c=_.b=_.a=null
+_.r=a},
+ki:function ki(a){this.a=a},
+kl:function kl(a){this.a=a},
+km:function km(a){this.a=a},
+kj:function kj(a){this.a=a},
+kk:function kk(a,b){this.a=a
+this.b=b},
+kh:function kh(a){this.a=a},
 lO:function lO(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r){var _=this
 _.y1=a
 _.y2=b
@@ -7859,23 +7875,7 @@ _.k1=p
 _.k2=q
 _.k3=r
 _.k4=s
-_.r1=t},
-kb:function kb(a,b,c,d){var _=this
-_.b=_.a=null
-_.c=a
-_.d=b
-_.f=c
-_.x=d},
-kg:function kg(a){var _=this
-_.f=_.e=_.d=_.c=_.b=_.a=null
-_.r=a},
-ki:function ki(a){this.a=a},
-kl:function kl(a){this.a=a},
-km:function km(a){this.a=a},
-kj:function kj(a){this.a=a},
-kk:function kk(a,b){this.a=a
-this.b=b},
-kh:function kh(a){this.a=a}},N={hg:function hg(){},kU:function kU(a,b,c,d,e,f,g,h,i,j,k,l,m,n){var _=this
+_.r1=t}},N={hg:function hg(){},kU:function kU(a,b,c,d,e,f,g,h,i,j,k,l,m,n){var _=this
 _.cx=a
 _.cy=b
 _.db=c
@@ -11311,6 +11311,163 @@ break
 case 1:return P.aT(r,s)}})
 return P.aU($async$A,s)}}
 Z.ey.prototype={}
+L.kb.prototype={
+eY:function(){var t,s,r,q,p,o=this,n=u.az,m=new H.i(n),l=new S.dW(m)
+m.i(0,"name",o.c)
+m.i(0,"tier",H.p(o.d))
+m.i(0,"desc",o.f)
+t=H.a([],u.c5)
+for(m=o.x,s=m.length,r=0;r<m.length;m.length===s||(0,H.bO)(m),++r){q=m[r]
+p=new H.i(n)
+p.i(0,"stat",q.a.a)
+p.i(0,"target",H.p(q.b))
+p.i(0,"damageInsteadOfBuff",String(q.c))
+t.push(new S.dW(p))}n=P.eS(t,"[","]")
+J.ej(l.a,"effects",n)
+return l},
+bI:function(){return H.p(this.c)+":___ "+H.p(self.LZString.compressToEncodedURIComponent(C.h.cn(this.eY().a,null)))},
+el:function(a){var t,s,r,q,p=null
+if(a==null)return
+for(t=J.c4(C.h.cg(0,a,p)),s=this.x;t.u();){r=t.gC()
+q=new Z.dQ(p,0,!1)
+q.a=$.m2.q(0,J.ck(r,"stat"))
+q.b=P.cj(J.ck(r,"target"),p,p)
+if(J.ck(r,"damageInsteadOfBuff")==="true")q.c=!0
+s.push(q)}},
+k:function(a){return this.c},
+gv:function(a){return this.c}}
+L.kg.prototype={
+cW:function(){var t,s,r,q,p,o,n,m=this
+P.bm("syncing form to scene")
+t=m.r
+m.b.value=t.c
+m.c.value=H.p(t.d)
+m.d.value=t.f
+for(t=t.x,s=t.length,r=0;r<t.length;t.length===s||(0,H.bO)(t),++r){q=t[r]
+p=m.e
+H.j5("render form for scene")
+o=new Z.eJ(q)
+n=o.a=document.createElement("div")
+n.classList.add("SceneDiv")
+p.appendChild(n)
+q.y=o
+o.ck()}P.bm("syncing data box to scene")
+m.ay()},
+ay:function(){var t=this.r
+P.bm("trying to sync data box, owner is "+t.k(0))
+this.f.value=t.bI()},
+dQ:function(){var t,s=this
+P.bm("drawing data box")
+t=document.createElement("textarea")
+s.f=t
+t.value=s.r.bI()
+s.f.cols=60
+s.f.rows=10
+t=s.f
+t.toString
+W.bx(t,"change",new L.ki(s),!1)
+s.a.appendChild(s.f)},
+dT:function(){var t=this,s=document,r=s.createElement("div"),q=s.createElement("label")
+q.textContent="Name:"
+s=W.pI("text")
+t.b=s
+s.value=t.r.c
+r.appendChild(q)
+r.appendChild(t.b)
+t.a.appendChild(r)
+s=t.b
+s.toString
+W.bx(s,"input",new L.kl(t),!1)},
+dU:function(){var t=this,s=document,r=s.createElement("div"),q=s.createElement("label")
+q.textContent="Tier (1-3 is normal):"
+s=W.pI("text")
+t.c=s
+s.value=H.p(t.r.d)
+r.appendChild(q)
+r.appendChild(t.c)
+t.a.appendChild(r)
+s=t.c
+s.toString
+W.bx(s,"input",new L.km(t),!1)},
+dR:function(){var t,s,r,q,p,o=this,n=document,m=n.createElement("textarea")
+o.d=m
+m.value=o.r.f
+o.d.cols=60
+o.d.rows=10
+m=o.d
+m.toString
+W.bx(m,"input",new L.kj(o),!1)
+t=n.createElement("div")
+s=["OWNER","CASTERS","ALLIES","ENEMY","ENEMIES","FRAYMOTIF"]
+for(r=0;r<6;++r){q=s[r]
+p=n.createElement("button")
+p.textContent="Append "+q+" tag"
+W.bx(p,"click",new L.kk(o,q),!1)
+t.appendChild(p)}o.a.appendChild(o.d)
+o.a.appendChild(t)},
+dS:function(){var t,s,r,q,p,o,n=this,m=document,l=m.createElement("div")
+n.e=l
+n.a.appendChild(l)
+for(l=n.r.x,t=l.length,s=0;s<l.length;l.length===t||(0,H.bO)(l),++s){r=l[s]
+q=n.e
+H.j5("render form for scene")
+p=new Z.eJ(r)
+o=p.a=m.createElement("div")
+o.classList.add("SceneDiv")
+q.appendChild(o)
+r.y=p
+p.ck()}},
+dP:function(){var t,s=document,r=s.createElement("div")
+r.classList.add("filterSection")
+t=s.createElement("button")
+t.textContent="Add Effect"
+r.appendChild(t)
+this.a.appendChild(r)
+W.bx(t,"click",new L.kh(this),!1)}}
+L.ki.prototype={
+$1:function(a){var t,s,r,q,p,o,n,m,l,k,j,i
+P.bm("syncing template to data box")
+try{p=this.a
+o=p.r
+t=P.cv(o.x,!0,u.c)
+n=p.f.value.split(":___ ")
+if(1>=n.length)return H.n(n,1)
+m=self.LZString.decompressFromEncodedURIComponent(n[1])
+n=C.h.cg(0,m,null)
+o.c=J.ck(n,"name")
+o.d=P.cj(J.ck(n,"tier"),null,null)
+o.f=J.ck(n,"desc")
+o.el(J.ck(n,"effects"))
+for(o=t,n=o.length,l=0;l<o.length;o.length===n||(0,H.bO)(o),++l){s=o[l]
+k=s.y.a
+j=k.parentNode
+if(j!=null)j.removeChild(k)}P.bm("loaded scene")
+p.cW()
+P.bm("synced form to scene")}catch(i){r=H.bu(i)
+q=H.bV(i)
+window.alert("something went wrong! "+H.p(r)+", "+H.p(q))}}}
+L.kl.prototype={
+$1:function(a){var t=this.a
+t.r.c=t.b.value
+t.ay()}}
+L.km.prototype={
+$1:function(a){var t=this.a
+t.r.d=P.cj(t.c.value,null,null)
+t.ay()}}
+L.kj.prototype={
+$1:function(a){var t=this.a
+t.r.f=t.d.value
+t.ay()}}
+L.kk.prototype={
+$1:function(a){var t=this.a,s=t.d
+s.value=H.p(s.value)+" "+H.p(this.b)
+t.r.f=t.d.value
+t.ay()}}
+L.kh.prototype={
+$1:function(a){var t=new Z.dQ($.e5,0,!0),s=this.a,r=s.r
+t.x=r
+r.x.push(t)
+t.eK(s.e)}}
 Z.dQ.prototype={
 eK:function(a){var t,s,r,q
 P.bm("render form for scene")
@@ -13024,163 +13181,6 @@ return!1},
 gO:function(a){return this.eX(!0)}}
 A.jz.prototype={
 $1:function(a){return 0}}
-Z.kb.prototype={
-eY:function(){var t,s,r,q,p,o=this,n=u.az,m=new H.i(n),l=new S.dW(m)
-m.i(0,"name",o.c)
-m.i(0,"tier",H.p(o.d))
-m.i(0,"desc",o.f)
-t=H.a([],u.c5)
-for(m=o.x,s=m.length,r=0;r<m.length;m.length===s||(0,H.bO)(m),++r){q=m[r]
-p=new H.i(n)
-p.i(0,"stat",q.a.a)
-p.i(0,"target",H.p(q.b))
-p.i(0,"damageInsteadOfBuff",String(q.c))
-t.push(new S.dW(p))}n=P.eS(t,"[","]")
-J.ej(l.a,"effects",n)
-return l},
-bI:function(){return H.p(this.c)+":___ "+H.p(self.LZString.compressToEncodedURIComponent(C.h.cn(this.eY().a,null)))},
-el:function(a){var t,s,r,q,p=null
-if(a==null)return
-for(t=J.c4(C.h.cg(0,a,p)),s=this.x;t.u();){r=t.gC()
-q=new Z.dQ(p,0,!1)
-q.a=$.m2.q(0,J.ck(r,"stat"))
-q.b=P.cj(J.ck(r,"target"),p,p)
-if(J.ck(r,"damageInsteadOfBuff")==="true")q.c=!0
-s.push(q)}},
-k:function(a){return this.c},
-gv:function(a){return this.c}}
-Z.kg.prototype={
-cW:function(){var t,s,r,q,p,o,n,m=this
-P.bm("syncing form to scene")
-t=m.r
-m.b.value=t.c
-m.c.value=H.p(t.d)
-m.d.value=t.f
-for(t=t.x,s=t.length,r=0;r<t.length;t.length===s||(0,H.bO)(t),++r){q=t[r]
-p=m.e
-H.j5("render form for scene")
-o=new Z.eJ(q)
-n=o.a=document.createElement("div")
-n.classList.add("SceneDiv")
-p.appendChild(n)
-q.y=o
-o.ck()}P.bm("syncing data box to scene")
-m.ay()},
-ay:function(){var t=this.r
-P.bm("trying to sync data box, owner is "+t.k(0))
-this.f.value=t.bI()},
-dQ:function(){var t,s=this
-P.bm("drawing data box")
-t=document.createElement("textarea")
-s.f=t
-t.value=s.r.bI()
-s.f.cols=60
-s.f.rows=10
-t=s.f
-t.toString
-W.bx(t,"change",new Z.ki(s),!1)
-s.a.appendChild(s.f)},
-dT:function(){var t=this,s=document,r=s.createElement("div"),q=s.createElement("label")
-q.textContent="Name:"
-s=W.pI("text")
-t.b=s
-s.value=t.r.c
-r.appendChild(q)
-r.appendChild(t.b)
-t.a.appendChild(r)
-s=t.b
-s.toString
-W.bx(s,"input",new Z.kl(t),!1)},
-dU:function(){var t=this,s=document,r=s.createElement("div"),q=s.createElement("label")
-q.textContent="Tier (1-3 is normal):"
-s=W.pI("text")
-t.c=s
-s.value=H.p(t.r.d)
-r.appendChild(q)
-r.appendChild(t.c)
-t.a.appendChild(r)
-s=t.c
-s.toString
-W.bx(s,"input",new Z.km(t),!1)},
-dR:function(){var t,s,r,q,p,o=this,n=document,m=n.createElement("textarea")
-o.d=m
-m.value=o.r.f
-o.d.cols=60
-o.d.rows=10
-m=o.d
-m.toString
-W.bx(m,"input",new Z.kj(o),!1)
-t=n.createElement("div")
-s=["OWNER","CASTERS","ALLIES","ENEMY","ENEMIES","FRAYMOTIF"]
-for(r=0;r<6;++r){q=s[r]
-p=n.createElement("button")
-p.textContent="Append "+q+" tag"
-W.bx(p,"click",new Z.kk(o,q),!1)
-t.appendChild(p)}o.a.appendChild(o.d)
-o.a.appendChild(t)},
-dS:function(){var t,s,r,q,p,o,n=this,m=document,l=m.createElement("div")
-n.e=l
-n.a.appendChild(l)
-for(l=n.r.x,t=l.length,s=0;s<l.length;l.length===t||(0,H.bO)(l),++s){r=l[s]
-q=n.e
-H.j5("render form for scene")
-p=new Z.eJ(r)
-o=p.a=m.createElement("div")
-o.classList.add("SceneDiv")
-q.appendChild(o)
-r.y=p
-p.ck()}},
-dP:function(){var t,s=document,r=s.createElement("div")
-r.classList.add("filterSection")
-t=s.createElement("button")
-t.textContent="Add Effect"
-r.appendChild(t)
-this.a.appendChild(r)
-W.bx(t,"click",new Z.kh(this),!1)}}
-Z.ki.prototype={
-$1:function(a){var t,s,r,q,p,o,n,m,l,k,j,i
-P.bm("syncing template to data box")
-try{p=this.a
-o=p.r
-t=P.cv(o.x,!0,u.c)
-n=p.f.value.split(":___ ")
-if(1>=n.length)return H.n(n,1)
-m=self.LZString.decompressFromEncodedURIComponent(n[1])
-n=C.h.cg(0,m,null)
-o.c=J.ck(n,"name")
-o.d=P.cj(J.ck(n,"tier"),null,null)
-o.f=J.ck(n,"desc")
-o.el(J.ck(n,"effects"))
-for(o=t,n=o.length,l=0;l<o.length;o.length===n||(0,H.bO)(o),++l){s=o[l]
-k=s.y.a
-j=k.parentNode
-if(j!=null)j.removeChild(k)}P.bm("loaded scene")
-p.cW()
-P.bm("synced form to scene")}catch(i){r=H.bu(i)
-q=H.bV(i)
-window.alert("something went wrong! "+H.p(r)+", "+H.p(q))}}}
-Z.kl.prototype={
-$1:function(a){var t=this.a
-t.r.c=t.b.value
-t.ay()}}
-Z.km.prototype={
-$1:function(a){var t=this.a
-t.r.d=P.cj(t.c.value,null,null)
-t.ay()}}
-Z.kj.prototype={
-$1:function(a){var t=this.a
-t.r.f=t.d.value
-t.ay()}}
-Z.kk.prototype={
-$1:function(a){var t=this.a,s=t.d
-s.value=H.p(s.value)+" "+H.p(this.b)
-t.r.f=t.d.value
-t.ay()}}
-Z.kh.prototype={
-$1:function(a){var t=new Z.dQ($.e5,0,!0),s=this.a,r=s.r
-t.x=r
-r.x.push(t)
-t.eK(s.e)}}
 A.l5.prototype={
 $1:function(a){return this.a.cC(a)},
 $S:function(){return this.b.m("~(0)")}}
@@ -13444,7 +13444,7 @@ o(F,"wb",4,null,["$4"],["tJ"],2,0)
 o(F,"wa",4,null,["$4"],["tI"],1,0)
 o(F,"w9",4,null,["$4"],["tH"],2,0)})();(function inheritance(){var t=hunkHelpers.mixin,s=hunkHelpers.inherit,r=hunkHelpers.inheritMany
 s(P.aJ,null)
-r(P.aJ,[H.oA,J.bR,J.d0,P.fp,P.aa,H.dc,P.hC,H.hk,H.iq,P.f1,H.dG,H.ml,P.aA,H.ex,H.d1,H.fw,P.bS,H.l0,H.hI,H.eV,H.fq,H.iA,H.ff,H.ng,H.c_,H.iJ,H.iW,P.nh,P.iB,P.bQ,P.h1,P.fi,P.fl,P.ac,P.iC,P.fd,P.ii,P.ij,P.iT,P.fO,P.nn,P.iK,P.fu,P.na,P.fo,P.eT,P.aw,P.j0,P.dn,P.fv,P.h0,P.n8,P.nm,P.ef,P.et,P.fI,P.ev,P.hV,P.fb,P.mR,P.hp,P.as,P.b4,P.aO,P.bT,P.f7,P.bw,P.iV,P.V,P.aP,P.cT,P.fB,P.mo,P.iR,W.jC,W.nY,W.eK,W.hl,W.h3,W.nj,P.mJ,P.n6,P.nb,P.aM,P.ch,B.dz,T.kD,Q.lu,E.mH,Q.mI,X.ix,Q.mG,Y.kB,S.kC,B.eM,N.hg,L.dB,A.iQ,O.ay,T.f8,M.dE,X.nT,M.nZ,Z.ey,Z.dQ,Z.eJ,E.n4,E.t,A.db,S.iL,U.d,Y.dm,K.id,X.o,G.ct,A.ju,B.c6,B.bY,A.d2,Z.kb,Z.kg,F.f_,F.l9,A.i5,Y.dl,O.ce,D.cg,B.c2,Q.ci,B.e7,Q.cE])
+r(P.aJ,[H.oA,J.bR,J.d0,P.fp,P.aa,H.dc,P.hC,H.hk,H.iq,P.f1,H.dG,H.ml,P.aA,H.ex,H.d1,H.fw,P.bS,H.l0,H.hI,H.eV,H.fq,H.iA,H.ff,H.ng,H.c_,H.iJ,H.iW,P.nh,P.iB,P.bQ,P.h1,P.fi,P.fl,P.ac,P.iC,P.fd,P.ii,P.ij,P.iT,P.fO,P.nn,P.iK,P.fu,P.na,P.fo,P.eT,P.aw,P.j0,P.dn,P.fv,P.h0,P.n8,P.nm,P.ef,P.et,P.fI,P.ev,P.hV,P.fb,P.mR,P.hp,P.as,P.b4,P.aO,P.bT,P.f7,P.bw,P.iV,P.V,P.aP,P.cT,P.fB,P.mo,P.iR,W.jC,W.nY,W.eK,W.hl,W.h3,W.nj,P.mJ,P.n6,P.nb,P.aM,P.ch,B.dz,T.kD,Q.lu,E.mH,Q.mI,X.ix,Q.mG,Y.kB,S.kC,B.eM,N.hg,L.dB,A.iQ,O.ay,T.f8,M.dE,X.nT,M.nZ,Z.ey,L.kb,L.kg,Z.dQ,Z.eJ,E.n4,E.t,A.db,S.iL,U.d,Y.dm,K.id,X.o,G.ct,A.ju,B.c6,B.bY,A.d2,F.f_,F.l9,A.i5,Y.dl,O.ce,D.cg,B.c2,Q.ci,B.e7,Q.cE])
 r(J.bR,[J.kN,J.hE,J.D,J.ae,J.dV,J.cM,H.hN,H.dg,W.hf,W.fV,W.iE,W.jJ,W.hc,W.jK,W.w,W.l8,W.lo,W.iO,W.lv,W.iS,W.j1,P.dD])
 r(J.D,[J.i1,J.ds,J.cc,F.kW,R.cL,R.ly,R.lx,S.cz,S.mu,S.mv,S.mw,S.jV,S.jY,S.jy,S.mA,S.mB,S.h7,S.lW,S.lX,S.jb,S.hq,S.fW,S.jw,S.jv,S.jX,S.im,S.jF,S.df,S.lg,S.li,S.lS,S.ia,S.lp,S.lq,S.kr,S.ks,S.lr,S.lk,S.jq,S.mh,S.mi,S.mg])
 s(J.kO,J.ae)
@@ -13463,7 +13463,7 @@ s(H.eq,P.cS)
 s(H.cn,H.dG)
 s(H.er,H.cn)
 r(P.aA,[H.hQ,H.hF,H.ip,H.i8,H.iH,P.eW,P.fN,P.hR,P.bF,P.ir,P.io,P.e2,P.h2,P.h9])
-r(H.d1,[H.nP,H.mc,H.kP,H.nD,H.nE,H.nF,P.mN,P.mM,P.mO,P.mP,P.ni,P.no,P.np,P.ny,P.kn,P.kp,P.ko,P.mS,P.n_,P.mW,P.mX,P.mY,P.mU,P.mZ,P.mT,P.n2,P.n3,P.n1,P.n0,P.m9,P.m8,P.nx,P.ne,P.nd,P.nf,P.n5,P.l1,P.ld,P.n9,P.jO,P.jP,P.ms,P.mp,P.mq,P.mr,P.nk,P.nt,P.ns,P.nu,P.nv,W.kz,W.kA,W.m7,W.mQ,P.mL,P.jB,P.nM,P.nN,P.jk,P.jl,O.jp,Z.ke,Z.kf,Z.kd,Z.kc,A.kM,U.mD,U.mE,A.jz,Z.ki,Z.kl,Z.km,Z.kj,Z.kk,Z.kh,A.l5,A.l3,A.l4,A.l6,O.nK,O.nL,O.nJ,V.jU,V.jT,V.jS,V.jR,D.m3,D.m4,D.m6])
+r(H.d1,[H.nP,H.mc,H.kP,H.nD,H.nE,H.nF,P.mN,P.mM,P.mO,P.mP,P.ni,P.no,P.np,P.ny,P.kn,P.kp,P.ko,P.mS,P.n_,P.mW,P.mX,P.mY,P.mU,P.mZ,P.mT,P.n2,P.n3,P.n1,P.n0,P.m9,P.m8,P.nx,P.ne,P.nd,P.nf,P.n5,P.l1,P.ld,P.n9,P.jO,P.jP,P.ms,P.mp,P.mq,P.mr,P.nk,P.nt,P.ns,P.nu,P.nv,W.kz,W.kA,W.m7,W.mQ,P.mL,P.jB,P.nM,P.nN,P.jk,P.jl,O.jp,L.ki,L.kl,L.km,L.kj,L.kk,L.kh,Z.ke,Z.kf,Z.kd,Z.kc,A.kM,U.mD,U.mE,A.jz,A.l5,A.l3,A.l4,A.l6,O.nK,O.nL,O.nJ,V.jU,V.jT,V.jS,V.jR,D.m3,D.m4,D.m6])
 r(H.mc,[H.m1,H.en])
 s(P.f0,P.bS)
 r(P.f0,[H.i,P.fm,P.iM])
@@ -14043,7 +14043,7 @@ t($,"wO","rG",function(){return P.cf("^\\S+$")})
 t($,"wH","bf",function(){return H.a([],H.bt("ae<aY>"))})
 t($,"wK","rF",function(){return P.cf("[\\/]")})
 t($,"wN","j7",function(){return H.a([],H.bt("ae<ep>"))})
-t($,"xF","t4",function(){var s=new Z.kb("Sample Fraymotif",1,"OWNER plays a 90s hit classic, and you can't help but tap your feet. ENEMY seems to not be able to stand it at all.",H.a([],H.bt("ae<dQ>")))
+t($,"xF","t4",function(){var s=new L.kb("Sample Fraymotif",1,"OWNER plays a 90s hit classic, and you can't help but tap your feet. ENEMY seems to not be able to stand it at all.",H.a([],H.bt("ae<dQ>")))
 s.b=H.a([],H.bt("ae<dB>"))
 return s})
 t($,"wX","rJ",function(){return H.a([],H.bt("ae<db>"))})

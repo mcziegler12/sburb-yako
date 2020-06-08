@@ -1,4 +1,3 @@
-import '../PlayerSpriteHandler.dart';
 import 'dart:async';
 import 'dart:convert';
 import "dart:html";
@@ -6,10 +5,8 @@ import "dart:math" as Math;
 import "dart:typed_data";
 import "../SBURBSim.dart";
 import "../includes/bytebuilder.dart";
-import "../navbar.dart";
 import '../includes/lz-string.dart';
-
-
+import "../navbar.dart";
 
 class Player extends GameEntity{
     //TODO trollPlayer subclass of player??? (have subclass of relationship)

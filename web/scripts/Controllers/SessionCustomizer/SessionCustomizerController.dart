@@ -1,8 +1,8 @@
-import '../Misc/CurrentUpdateProgress.dart';
 import "dart:async";
 import "dart:html";
 import '../../SBURBSim.dart';
 import '../../navbar.dart';
+import '../Misc/CurrentUpdateProgress.dart';
 import "SessionForm.dart";
 
 Element container;
