@@ -5,7 +5,6 @@ import 'dart:html';
 
 import 'SBURBSim.dart';
 import "dart:async";
-import "includes/tracer.dart";
 export 'navbar.dart';
 export 'includes/logger.dart';
 export 'includes/math_utils.dart';
