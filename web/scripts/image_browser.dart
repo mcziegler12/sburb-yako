@@ -33,7 +33,7 @@ List<Element> imageTiles = <Element>[];
 class ArtCategory {
     ArtCategory(String this.name, String this.title, String this.tag, {String this.url = null, Action this.action = null});
     
-    static const String testPath = "http://farragofiction.com";
+    static const String testPath = "https://yakomeg.github.io";
     static const bool testMode = true;
 
     String name;

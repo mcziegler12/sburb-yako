@@ -1,11 +1,10 @@
-import '../PlayerSpriteHandler.dart';
-import "../SBURBSim.dart";
 import 'dart:async';
 import 'dart:html';
-import "../v2.0/char_creator_helper.dart";
+import '../PlayerSpriteHandler.dart';
+import "../SBURBSim.dart";
+import "../includes/colour_picker.dart";
 import '../navbar.dart';
 
-import "../includes/colour_picker.dart";
 
 //need to render all players
 class CharacterCreatorHelper {
