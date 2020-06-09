@@ -2646,7 +2646,7 @@ C.D.ah(m,q.a)
 o.appendChild(m)}s=G.jb(new N.eO(),new N.eP(),"Filter...",new N.eQ(),u.h)
 s.className="filter"
 o.appendChild(s)},
-hE:function(a){var t="http://farragofiction.com"+H.b(a)
+hE:function(a){var t="https://yakomeg.github.io"+H.b(a)
 return t},
 hD:function(a,b,c,d,e){var t,s,r
 a.className=d
@@ -2703,26 +2703,26 @@ eE:function(){var t=0,s=P.fu(u.P),r,q,p,o,n
 var $async$eE=P.fv(function(a,b){if(a===1)return P.fn(b,s)
 while(true)switch(t){case 0:n=N
 t=3
-return P.fm(N.cZ("/SBURBSimE/images/Hair/"),$async$eE)
+return P.fm(N.cZ("/build/images/Hair/"),$async$eE)
 case 3:o=n.hH(b,"hair")
 if(typeof o!=="number"){r=H.N(o)
 t=1
 break}q=u.s
 p=1
-for(;p<=o;++p)N.hD(N.hP(H.i(["/SBURBSimE/images/Hair/hair_back"+p+".png","/SBURBSimE/images/Hair/head.png","/SBURBSimE/images/Hair/hair"+p+".png"],q)),C.b.h(p),!0,"head","headTile")
+for(;p<=o;++p)N.hD(N.hP(H.i(["/build/images/Hair/hair_back"+p+".png","/build/images/Hair/head.png","/build/images/Hair/hair"+p+".png"],q)),C.b.h(p),!0,"head","headTile")
 case 1:return P.fo(r,s)}})
 return P.fp($async$eE,s)},
 eF:function(){var t=0,s=P.fu(u.P),r,q,p,o,n
 var $async$eF=P.fv(function(a,b){if(a===1)return P.fn(b,s)
 while(true)switch(t){case 0:n=N
 t=3
-return P.fm(N.cZ("/SBURBSimE/images/Horns/"),$async$eF)
+return P.fm(N.cZ("/build/images/Horns/"),$async$eF)
 case 3:o=n.hH(b,"left")
 if(typeof o!=="number"){r=H.N(o)
 t=1
 break}q=u.s
 p=1
-for(;p<=o;++p)N.hD(N.hP(H.i(["/SBURBSimE/images/Horns/right"+p+".png","/SBURBSimE/images/Hair/head.png","/SBURBSimE/images/Horns/left"+p+".png"],q)),C.b.h(p),!0,"head","headTile")
+for(;p<=o;++p)N.hD(N.hP(H.i(["/build/images/Horns/right"+p+".png","/build/images/Hair/head.png","/build/images/Horns/left"+p+".png"],q)),C.b.h(p),!0,"head","headTile")
 case 1:return P.fo(r,s)}})
 return P.fp($async$eF,s)},
 hP:function(a){var t,s=document.createElement("div")

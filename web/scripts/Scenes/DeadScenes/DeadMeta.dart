@@ -215,7 +215,7 @@ class DeadMeta extends Scene {
             ..add(new PlusMinusConversationalPair(["Yup, totally made this thing you're in. Weird, huh?"], ["..."],["Well that's just fucking great.", "There's no way."]))
             ..add(new PlusMinusConversationalPair(["Anyways, have fun totally losing this dead session."], ["..."],["Well fuck you for me existing.", "Fuck off."]));
 
-        //inspired by amazing fanart by azukiMochi   http://farragofiction.com/SBURBSimE/images/misc/fanArt/MascotCompetition/azukiMochi.png
+        //inspired by amazing fanart by azukiMochi   http://farragofiction.com/build/images/misc/fanArt/MascotCompetition/azukiMochi.png
         List<PlusMinusConversationalPair> convo3 = new List<PlusMinusConversationalPair>()
             ..add(new PlusMinusConversationalPair(["How do you liek SBURBSi-"], ["Hey! Hope you're having a good tim-"],["What the fuck?", "What?"]))
             ..add(new PlusMinusConversationalPair(["OMFG this is a dead sesion isn't it?"], ["Jesus fuck, this is totally a dead session isn't it?"],["What?", "I have no idea what you're talking about.", "I don't know?"]))

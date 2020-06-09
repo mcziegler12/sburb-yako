@@ -64,55 +64,55 @@ window.onload = function() {
 }
 function renderFirstPlayerFanArt(){
 //var folder = "images/misc/fanArt/ABFanArt/"
-	var folder = "http://farragofiction.com/SBURBSimE/images/misc/fanArt/FirstPlayer/";
+	var folder = "http://farragofiction.com/build/images/misc/fanArt/FirstPlayer/";
 	renderAllImagesInFolder(folder); //if can't scrape from local computer, make this an absolute reference to server.  haha, no i can't cross session scripting is a bitch. HAVE to test on server l8r.
 }
 
 function oblivionSurfer(){
-	var folder = "http://farragofiction.com/SBURBSimE/images/misc/fanArt/oblivionSurfer/";
+	var folder = "http://farragofiction.com/build/images/misc/fanArt/oblivionSurfer/";
 	renderAllImagesInFolder(folder); //if can't scrape from local computer, make this an absolute reference to server.  haha, no i can't cross session scripting is a bitch. HAVE to test on server l8r.
 }
 
 function shogunsim(){
-	var folder = "http://farragofiction.com/SBURBSimE/images/misc/fanArt/ShogunSim/";
+	var folder = "http://farragofiction.com/build/images/misc/fanArt/ShogunSim/";
 	renderAllImagesInFolder(folder); //if can't scrape from local computer, make this an absolute reference to server.  haha, no i can't cross session scripting is a bitch. HAVE to test on server l8r.
 
 }
 
 function renderMascotCompetition(){
-	var folder = "http://farragofiction.com/SBURBSimE/images/misc/fanArt/MascotCompetition/";
+	var folder = "http://farragofiction.com/build/images/misc/fanArt/MascotCompetition/";
 	renderAllImagesInFolder(folder); //if can't scrape from local computer, make this an absolute reference to server.  haha, no i can't cross session scripting is a bitch. HAVE to test on server l8r.
 
 }
 
 function octobermas(){
-	var folder = "http://farragofiction.com/SBURBSimE/images/misc/fanArt/OctoberMas/";
+	var folder = "http://farragofiction.com/build/images/misc/fanArt/OctoberMas/";
 	renderAllImagesInFolder(folder); //if can't scrape from local computer, make this an absolute reference to server.  haha, no i can't cross session scripting is a bitch. HAVE to test on server l8r.
 
 }
 //don't hard code fan art, instead, scrape all files of .png or .jpg or .gif or .jpeg out of a given folder and render.
 function renderFanArtGrimAB(){
 	//var folder = "images/misc/fanArt/ABFanArt/"
-	var folder = "http://farragofiction.com/SBURBSimE/images/misc/fanArt/ABFanArt/";
+	var folder = "http://farragofiction.com/build/images/misc/fanArt/ABFanArt/";
 	renderAllImagesInFolder(folder); //if can't scrape from local computer, make this an absolute reference to server.  haha, no i can't cross session scripting is a bitch. HAVE to test on server l8r.
 }
 
 //don't hard code fan art, instead, scrape all files of .png or .jpg or .gif or .jpeg out of a given folder and render.
 function renderFanArtStarEyes(){
 	//var folder = "images/misc/fanArt/ABFanArt/"
-	var folder = "http://farragofiction.com/SBURBSimE/images/misc/fanArt/star.eyes/";
+	var folder = "http://farragofiction.com/build/images/misc/fanArt/star.eyes/";
 	renderAllImagesInFolder(folder); //if can't scrape from local computer, make this an absolute reference to server.  haha, no i can't cross session scripting is a bitch. HAVE to test on server l8r.
 }
 
 //don't hard code fan art, instead, scrape all files of .png or .jpg or .gif or .jpeg out of a given folder and render.
 function renderFanArtGifs(){
-	var folder = "http://farragofiction.com/SBURBSimE/images/misc/fanArt/gifs/";
+	var folder = "http://farragofiction.com/build/images/misc/fanArt/gifs/";
 	renderAllImagesInFolder(folder); //if can't scrape from local computer, make this an absolute reference to server.  haha, no i can't cross session scripting is a bitch. HAVE to test on server l8r.
 }
 
 //don't hard code fan art, instead, scrape all files of .png or .jpg or .gif or .jpeg out of a given folder and render.
 function renderFanArtMisc(){
-	var folder = "http://farragofiction.com/SBURBSimE/images/misc/fanArt/miscFanArt/";
+	var folder = "http://farragofiction.com/build/images/misc/fanArt/miscFanArt/";
 	renderAllImagesInFolder(folder); //if can't scrape from local computer, make this an absolute reference to server.  haha, no i can't cross session scripting is a bitch. HAVE to test on server l8r.
 }
 
