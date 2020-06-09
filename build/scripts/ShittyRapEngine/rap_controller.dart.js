@@ -4373,7 +4373,7 @@ _.a=b
 _.b=c
 _.$ti=d},
 o_:function o_(){},
-ze:function(){var t,s,r,q=u.P,p=H.a([],q),o=P.br(u.c),n=u.s,m=u.f,l=u.ba,k=new G.ly(),j=new L.e5(83475,p,o,P.br(u.dK),new Z.ps(H.a([],u.m)),500*$.l.r,H.a([],q),new S.oo(new F.h6(!1,"Afterlife"),H.a([],q),H.a([],q)),C.y,H.a([],q),H.a([],n),H.a([],m),H.a([],m),H.a([],l),new B.tf(H.a([],l)),k)
+ze:function(){var t,s,r,q=u.P,p=H.a([],q),o=P.br(u.c),n=u.s,m=u.f,l=u.ba,k=new G.ly(),j=new L.e5(83475,p,o,P.br(u.dK),new L.ps(H.a([],u.m)),500*$.l.r,H.a([],q),new S.oo(new F.h6(!1,"Afterlife"),H.a([],q),H.a([],q)),C.y,H.a([],q),H.a([],n),H.a([],m),H.a([],m),H.a([],l),new B.tf(H.a([],l)),k)
 A.uh()
 k.ba=!1
 j.r=new F.h6(!1,"Session: 83475")
@@ -6040,6 +6040,15 @@ _.d$=g
 _.e$=h
 _.f$=i
 _.r$=j},
+a4:function(a,b){var t=new L.fP(a,b,H.a([],u.br))
+t.b=H.a([],u.ev)
+return t},
+fP:function fP(a,b,c){var _=this
+_.b=null
+_.c=a
+_.d=b
+_.x=c},
+ps:function ps(a){this.a=a},
 kF:function kF(){this.a=null},
 kN:function kN(a){this.r1=a
 this.b=this.a=null},
@@ -9864,16 +9873,7 @@ lT:function lT(){this.b=this.a=null},
 m9:function m9(){this.b=this.a=null},
 md:function md(){this.b=this.a=null},
 mY:function mY(){this.b=this.a=null},
-n1:function n1(){this.b=this.a=null},
-a4:function(a,b){var t=new Z.fP(a,b,H.a([],u.br))
-t.b=H.a([],u.ev)
-return t},
-fP:function fP(a,b,c){var _=this
-_.b=null
-_.c=a
-_.d=b
-_.x=c},
-ps:function ps(a){this.a=a}},F={k6:function k6(a){this.c="???"
+n1:function n1(){this.b=this.a=null}},F={k6:function k6(a){this.c="???"
 this.d=a},qF:function qF(a,b,c){var _=this
 _.e=a
 _.f=b
@@ -9943,7 +9943,7 @@ a5=H.a([],m)
 a4=new F.q(e,d,c,b,a,a0,a1,a2,a3,C.b,f2,"Dutton",a4,a5,H.a([],l),H.a([],k),H.a([],j),f2)
 a4.t("Dutton",f2)
 a4.a$.m(P.m([$.l,10,$.E,10,$.aD,10,$.R,50,$.al,50,$.V,50,$.Q,50],t,h))
-a3=Z.a4("Duttobliteration",2)
+a3=L.a4("Duttobliteration",2)
 a3.x.push(new Z.G(2,!0))
 a5.push(a3)
 a3=new F.q(H.a([],s),H.a([],r),H.a([],q),H.a([],q),H.a([],p),H.a([],s),H.a([],s),H.a([],s),H.a([],o),C.b,f2,f3,H.a([],n),H.a([],m),H.a([],l),H.a([],k),H.a([],j),f2)
@@ -9974,7 +9974,7 @@ b0=H.a([],m)
 a9=new F.q(a0,a,b,c,d,e,a6,a7,a8,C.b,f2,f6,a9,b0,H.a([],l),H.a([],k),H.a([],j),f2)
 a9.t(f6,f2)
 a9.a$.m(P.m([$.l,20],t,h))
-a8=Z.a4("Kill ALL The Characters",2)
+a8=L.a4("Kill ALL The Characters",2)
 a8.x.push(new Z.G(3,!0))
 b0.push(a8)
 a8=H.a([],s)
@@ -9991,7 +9991,7 @@ b1=H.a([],m)
 a0=new F.q(a8,b0,a7,a6,e,d,c,b,a,C.b,f2,"KidRock",a0,b1,H.a([],l),H.a([],k),H.a([],j),f2)
 a0.t("KidRock",f2)
 a0.a$.m(P.m([$.l,20],t,h))
-a=Z.a4("BANG DA DANG DIGGY DIGGY",2)
+a=L.a4("BANG DA DANG DIGGY DIGGY",2)
 b=a.x
 b.push(new Z.G(3,!0))
 b.push(new Z.G(1,!1))
@@ -10010,16 +10010,16 @@ b2=H.a([],m)
 a8=new F.q(a,b1,b,c,d,e,a6,a7,b0,C.b,f2,"Sleuth",a8,b2,H.a([],l),H.a([],k),H.a([],j),f2)
 a8.t("Sleuth",f2)
 a8.a$.m(P.m([$.l,20,$.aT,100],t,h))
-b0=Z.a4(f7,2)
+b0=L.a4(f7,2)
 b0.x.push(new Z.G(1,!0))
 b2.push(b0)
-b0=Z.a4(f7,2)
+b0=L.a4(f7,2)
 b0.x.push(new Z.G(1,!0))
 b2.push(b0)
-b0=Z.a4(f7,2)
+b0=L.a4(f7,2)
 b0.x.push(new Z.G(3,!0))
 b2.push(b0)
-b0=Z.a4(f7,2)
+b0=L.a4(f7,2)
 b0.x.push(new Z.G(1,!0))
 b2.push(b0)
 b0=new F.q(H.a([],s),H.a([],r),H.a([],q),H.a([],q),H.a([],p),H.a([],s),H.a([],s),H.a([],s),H.a([],o),C.b,f2,f8,H.a([],n),H.a([],m),H.a([],l),H.a([],k),H.a([],j),f2)
@@ -10042,13 +10042,13 @@ b5=H.a([],m)
 b4=new F.q(a7,a6,e,d,c,b,b1,a,b3,C.b,f2,g0,b4,b5,H.a([],l),H.a([],k),H.a([],j),f2)
 b4.t(g0,f2)
 b4.a$.m(P.m([$.l,20,$.al,50],t,h))
-b3=Z.a4(g1,3)
+b3=L.a4(g1,3)
 b3.x.push(new Z.G(1,!1))
 b5.push(b3)
-b3=Z.a4(g1,3)
+b3=L.a4(g1,3)
 b3.x.push(new Z.G(1,!1))
 b5.push(b3)
-b3=Z.a4(g1,3)
+b3=L.a4(g1,3)
 b3.x.push(new Z.G(1,!1))
 b5.push(b3)
 b3=new F.q(H.a([],s),H.a([],r),H.a([],q),H.a([],q),H.a([],p),H.a([],s),H.a([],s),H.a([],s),H.a([],o),C.b,f2,"Doctor",H.a([],n),H.a([],m),H.a([],l),H.a([],k),H.a([],j),f2)
@@ -10235,7 +10235,7 @@ e1=H.a([],m)
 f1=new F.q(e2,e3,e4,e5,e6,e7,e8,e9,f0,C.b,f2,h6,f1,e1,H.a([],l),H.a([],k),H.a([],j),f2)
 f1.t(h6,f2)
 f1.a$.m(P.m([$.E,1000,$.aD,1000,$.al,500,$.l,250],t,h))
-f0=Z.a4("Atomic Teleport Spam",3)
+f0=L.a4("Atomic Teleport Spam",3)
 e9=f0.x
 e9.push(new Z.G(0,!1))
 e9.push(new Z.G(2,!0))
@@ -10256,7 +10256,7 @@ e0=new F.q(e1,e9,e8,e7,e6,e5,e4,e3,e2,C.b,f2,f0,e0,d9,H.a([],l),H.a([],k),H.a([]
 e0.t(f0,f2)
 e0.a$.m(P.m([$.E,500,$.aD,500,$.R,250,$.l,150],t,h))
 e0.a2=!0
-f0=Z.a4(h7,3)
+f0=L.a4(h7,3)
 f0.x.push(new Z.G(3,!0))
 d9.push(f0)
 f0=Y.cZ("Speaker of the Furthest Ring")
@@ -10275,7 +10275,7 @@ e1=new F.q(d9,e2,e3,e4,e5,e6,e7,e8,e9,C.b,f2,f0,e1,d8,H.a([],l),H.a([],k),H.a([]
 e1.t(f0,f2)
 e1.a2=!0
 e1.a$.m(P.m([$.E,1000,$.aD,1000,$.R,250,$.l,250],t,h))
-f0=Z.a4(h7,3)
+f0=L.a4(h7,3)
 f0.x.push(new Z.G(3,!0))
 d8.push(f0)
 f0=H.a([],s)
@@ -10292,7 +10292,7 @@ d9=H.a([],m)
 e2=new F.q(f0,d8,e9,e8,e7,e6,e5,e4,e3,C.b,f2,"Clown",e2,d9,H.a([],l),H.a([],k),H.a([],j),f2)
 e2.t("Clown",f2)
 e2.a$.m(P.m([$.E,1000,$.aD,1000,$.V,-250,$.Q,250,$.l,100],t,h))
-e3=Z.a4("Can't Keep Down The Clown",3)
+e3=L.a4("Can't Keep Down The Clown",3)
 e4=e3.x
 e4.push(new Z.G(0,!1))
 e4.push(new Z.G(0,!0))
@@ -10312,7 +10312,7 @@ f0=new F.q(e3,d9,e4,e5,e6,e7,e8,e9,d8,C.b,f2,"Echidna",f0,d7,H.a([],l),H.a([],k)
 f0.t("Echidna",f2)
 f0.a$.m(P.m([$.l,20],t,h))
 f0.a2=!0
-d8=Z.a4("Odin's Wrath",3)
+d8=L.a4("Odin's Wrath",3)
 e9=d8.x
 e9.push(new Z.G(3,!1))
 e9.push(new Z.G(3,!0))
@@ -10331,7 +10331,7 @@ d6=H.a([],m)
 e3=new F.q(d8,d7,e9,e8,e7,e6,e5,e4,d9,C.b,f2,"Puppet",e3,d6,H.a([],l),H.a([],k),H.a([],j),f2)
 e3.t("Puppet",f2)
 e3.a$.m(P.m([$.E,500,$.aD,500,$.R,250,$.al,250,$.V,-250,$.Q,250,$.T,250,$.l,100],t,h))
-d9=Z.a4("Hee Hee Hee Hoo!",3)
+d9=L.a4("Hee Hee Hee Hoo!",3)
 e4=d9.x
 e4.push(new Z.G(3,!1))
 e4.push(new Z.G(3,!0))
@@ -10350,7 +10350,7 @@ d5=H.a([],m)
 d8=new F.q(d9,d6,e4,e5,e6,e7,e8,e9,d7,C.b,f2,h8,d8,d5,H.a([],l),H.a([],k),H.a([],j),f2)
 d8.t(h8,f2)
 d8.a$.m(P.m([$.E,500,$.aD,500,$.al,250,$.l,100],t,h))
-d7=Z.a4(h9,3)
+d7=L.a4(h9,3)
 d7.x.push(new Z.G(3,!0))
 d5.push(d7)
 d7=H.a([],s)
@@ -10367,7 +10367,7 @@ d4=H.a([],m)
 d9=new F.q(d7,d5,e9,e8,e7,e6,e5,e4,d6,C.b,f2,i0,d9,d4,H.a([],l),H.a([],k),H.a([],j),f2)
 d9.t(i0,f2)
 d9.a$.m(P.m([$.E,500,$.aD,500,$.al,250,$.V,-250,$.Q,250,$.l,100],t,h))
-d6=Z.a4("Degenerate Regeneration",3)
+d6=L.a4("Degenerate Regeneration",3)
 d6.x.push(new Z.G(0,!0))
 d4.push(d6)
 d6=H.a([],s)
@@ -10384,7 +10384,7 @@ d3=H.a([],m)
 d7=new F.q(d6,d4,e4,e5,e6,e7,e8,e9,d5,C.b,f2,"Dragon",d7,d3,H.a([],l),H.a([],k),H.a([],j),f2)
 d7.t("Dragon",f2)
 d7.a$.m(P.m([$.E,500,$.aD,500,$.l,100],t,h))
-d5=Z.a4("Mighty Fire Breath",3)
+d5=L.a4("Mighty Fire Breath",3)
 d5.x.push(new Z.G(3,!0))
 d3.push(d5)
 d5=H.a([],s)
@@ -10401,7 +10401,7 @@ d2=H.a([],m)
 d6=new F.q(d5,d3,e9,e8,e7,e6,e5,e4,d4,C.b,f2,"Teacher",d6,d2,H.a([],l),H.a([],k),H.a([],j),f2)
 d6.t("Teacher",f2)
 d6.a$.m(P.m([$.E,500,$.aD,500,$.l,100],t,h))
-d4=Z.a4("Lecture",3)
+d4=L.a4("Lecture",3)
 e4=d4.x
 e4.push(new Z.G(3,!1))
 e4.push(new Z.G(3,!1))
@@ -10420,7 +10420,7 @@ d1=H.a([],m)
 d5=new F.q(d4,d2,e4,e5,e6,e7,e8,e9,d3,C.b,f2,i1,d5,d1,H.a([],l),H.a([],k),H.a([],j),f2)
 d5.t(i1,f2)
 d5.a$.m(P.m([$.E,500,$.aD,500,$.l,100],t,h))
-d3=Z.a4(h9,3)
+d3=L.a4(h9,3)
 d3.x.push(new Z.G(3,!0))
 d1.push(d3)
 d3=H.a([],s)
@@ -10437,7 +10437,7 @@ d0=H.a([],m)
 d4=new F.q(d3,d1,e9,e8,e7,e6,e5,e4,d2,C.b,f2,"Doll",d4,d0,H.a([],l),H.a([],k),H.a([],j),f2)
 d4.t("Doll",f2)
 d4.a$.m(P.m([$.E,500,$.aD,500,$.l,100],t,h))
-d2=Z.a4("Disconcerting Ogle",3)
+d2=L.a4("Disconcerting Ogle",3)
 e4=d2.x
 e4.push(new Z.G(3,!1))
 e4.push(new Z.G(0,!0))
@@ -10456,7 +10456,7 @@ c9=H.a([],m)
 d3=new F.q(d2,d0,e4,e5,e6,e7,e8,e9,d1,C.b,f2,"Zombie",d3,c9,H.a([],l),H.a([],k),H.a([],j),f2)
 d3.t("Zombie",f2)
 d3.a$.m(P.m([$.E,500,$.aD,500,$.l,100],t,h))
-d1=Z.a4("Rise From The Grave",3)
+d1=L.a4("Rise From The Grave",3)
 d1.x.push(new Z.G(0,!0))
 c9.push(d1)
 d1=H.a([],s)
@@ -10473,7 +10473,7 @@ c8=H.a([],m)
 d2=new F.q(d1,c9,e9,e8,e7,e6,e5,e4,d0,C.b,f2,"Demon",d2,c8,H.a([],l),H.a([],k),H.a([],j),f2)
 d2.t("Demon",f2)
 d2.a$.m(P.m([$.E,500,$.aD,500,$.R,250,$.l,250],t,h))
-d0=Z.a4(i2,3)
+d0=L.a4(i2,3)
 e4=d0.x
 e4.push(new Z.G(2,!0))
 e4.push(new Z.G(2,!0))
@@ -10492,7 +10492,7 @@ c7=H.a([],m)
 d1=new F.q(d0,c8,e4,e5,e6,e7,e8,e9,c9,C.b,f2,"Monster",d1,c7,H.a([],l),H.a([],k),H.a([],j),f2)
 d1.t("Monster",f2)
 d1.a$.m(P.m([$.E,500,$.aD,500,$.T,-250,$.Q,250,$.l,100],t,h))
-c9=Z.a4(i2,3)
+c9=L.a4(i2,3)
 e9=c9.x
 e9.push(new Z.G(2,!0))
 e9.push(new Z.G(2,!0))
@@ -10511,7 +10511,7 @@ c6=H.a([],m)
 d0=new F.q(c9,c7,e9,e8,e7,e6,e5,e4,c8,C.b,f2,"Vampire",d0,c6,H.a([],l),H.a([],k),H.a([],j),f2)
 d0.t("Vampire",f2)
 d0.a$.m(P.m([$.E,500,$.aD,500,$.al,250,$.l,100],t,h))
-c8=Z.a4("I Vant to Drink Your Blood",3)
+c8=L.a4("I Vant to Drink Your Blood",3)
 e4=c8.x
 e4.push(new Z.G(2,!0))
 e4.push(new Z.G(0,!0))
@@ -10530,7 +10530,7 @@ c5=H.a([],m)
 c9=new F.q(c8,c6,e4,e5,e6,e7,e8,e9,c7,C.b,f2,"Pumpkin",c9,c5,H.a([],l),H.a([],k),H.a([],j),f2)
 c9.t("Pumpkin",f2)
 c9.a$.m(P.m([$.E,500,$.aD,500,$.al,5000,$.V,-250,$.Q,5000,$.l,100],t,h))
-c7=Z.a4("What Pumpkin???",3)
+c7=L.a4("What Pumpkin???",3)
 e9=c7.x
 e9.push(new Z.G(2,!1))
 e9.push(new Z.G(3,!0))
@@ -10549,7 +10549,7 @@ c3=H.a([],m)
 c8=new F.q(c7,c5,e9,e8,e7,e6,e5,e4,c6,C.b,f2,i3,c8,c3,H.a([],l),H.a([],k),H.a([],j),f2)
 c8.t(i3,f2)
 c8.a$.m(P.m([$.E,500,$.aD,500,$.T,-250,$.l,100],t,h))
-c6=Z.a4("Grim Bark Slash Attack",3)
+c6=L.a4("Grim Bark Slash Attack",3)
 e4=c6.x
 e4.push(new Z.G(2,!0))
 e4.push(new Z.G(2,!0))
@@ -10568,7 +10568,7 @@ c4=H.a([],m)
 c7=new F.q(c6,c3,e4,e5,e6,e7,e8,e9,c5,C.b,f2,i4,c7,c4,H.a([],l),H.a([],k),H.a([],j),f2)
 c7.t(i4,f2)
 c7.a$.m(P.m([$.E,500,$.aD,500,$.al,500,$.l,100],t,h))
-c5=Z.a4("NO  CAPES",3)
+c5=L.a4("NO  CAPES",3)
 e9=c5.x
 e9.push(new Z.G(2,!0))
 e9.push(new Z.G(2,!0))
@@ -10587,7 +10587,7 @@ c2=H.a([],m)
 c6=new F.q(c5,c4,e9,e8,e7,e6,e5,e4,c3,C.b,f2,"Monkey",c6,c2,H.a([],l),H.a([],k),H.a([],j),f2)
 c6.t("Monkey",f2)
 c6.a$.m(P.m([$.E,5,$.aD,5,$.al,5000,$.V,-5000,$.Q,-5000,$.l,100],t,h))
-c3=Z.a4("Monkey Business",3)
+c3=L.a4("Monkey Business",3)
 e4=c3.x
 e4.push(new Z.G(0,!1))
 e4.push(new Z.G(2,!0))
@@ -14525,6 +14525,18 @@ break
 case 1:return P.bB(r,s)}})
 return P.bC($async$T,s)}}
 Z.fH.prototype={}
+L.fP.prototype={
+iO:function(a){var t,s,r,q
+if(a==null)return
+for(t=J.aN(C.j.aI(0,a,null)),s=this.x;t.C();){r=t.gG()
+q=new Z.G(0,!1)
+$.vL.l(0,J.ab(r,"stat"))
+q.b=P.bP(J.ab(r,"target"),null,null)
+if(J.ab(r,"damageInsteadOfBuff")==="true")q.c=!0
+s.push(q)}},
+q:function(a){return this.c},
+gk:function(a){return this.c}}
+L.ps.prototype={}
 Z.G.prototype={
 q:function(a){var t,s,r=this,q=r.c
 if(q){t=r.b
@@ -14660,7 +14672,7 @@ iR:function(a){var t,s,r,q=this.S
 C.c.su(q,0)
 if(a==null)return
 for(t=J.aN(C.j.aI(0,a,null));t.C();){s=t.gG()
-r=Z.a4("",0)
+r=L.a4("",0)
 r.c=J.ab(s,"name")
 r.d=P.bP(J.ab(s,"tier"),null,null)
 J.ab(s,"desc")
@@ -17607,18 +17619,6 @@ if(b===3)return t.a
 throw H.k("Colour index out of range: "+b)}}
 A.oQ.prototype={
 $1:function(a){return 0}}
-Z.fP.prototype={
-iO:function(a){var t,s,r,q
-if(a==null)return
-for(t=J.aN(C.j.aI(0,a,null)),s=this.x;t.C();){r=t.gG()
-q=new Z.G(0,!1)
-$.vL.l(0,J.ab(r,"stat"))
-q.b=P.bP(J.ab(r,"target"),null,null)
-if(J.ab(r,"damageInsteadOfBuff")==="true")q.c=!0
-s.push(q)}},
-q:function(a){return this.c},
-gk:function(a){return this.c}}
-Z.ps.prototype={}
 E.qj.prototype={}
 A.qs.prototype={
 $1:function(a){return this.a.fM(a)},
@@ -17749,56 +17749,56 @@ dH:function(){var t,s,r,q,p,o,n=this,m=n.S
 if(m.length!==0||!n.aE)return
 t=10-C.c.a6($.oc,n.ai)
 s=H.a([],u.m)
-r=Z.a4("Telekinesis",1)
+r=L.a4("Telekinesis",1)
 r.x.push(new Z.G(2,!0))
 s.push(r)
-r=Z.a4("Pyrokinesis",1)
+r=L.a4("Pyrokinesis",1)
 r.x.push(new Z.G(2,!0))
 s.push(r)
-r=Z.a4("Aquakinesis",1)
+r=L.a4("Aquakinesis",1)
 r.x.push(new Z.G(2,!0))
 s.push(r)
-r=Z.a4("Electrokinesis",1)
+r=L.a4("Electrokinesis",1)
 r.x.push(new Z.G(2,!0))
 s.push(r)
-r=Z.a4("Terakinesis",1)
+r=L.a4("Terakinesis",1)
 r.x.push(new Z.G(2,!0))
 s.push(r)
-r=Z.a4("Vitaekinesis",1)
+r=L.a4("Vitaekinesis",1)
 r.x.push(new Z.G(2,!0))
 s.push(r)
-r=Z.a4("Fungikinesis",1)
+r=L.a4("Fungikinesis",1)
 r.x.push(new Z.G(2,!0))
 s.push(r)
-r=Z.a4("Mind Control",1)
+r=L.a4("Mind Control",1)
 q=r.x
 q.push(new Z.G(3,!0))
 q.push(new Z.G(3,!1))
 s.push(r)
-r=Z.a4("Optic Blast",1)
+r=L.a4("Optic Blast",1)
 r.x.push(new Z.G(2,!0))
 s.push(r)
-r=Z.a4("Ghost Communing",1)
+r=L.a4("Ghost Communing",1)
 q=r.x
 q.push(new Z.G(3,!0))
 q.push(new Z.G(3,!1))
 s.push(r)
-r=Z.a4("Animal Communing",1)
+r=L.a4("Animal Communing",1)
 q=r.x
 q.push(new Z.G(3,!0))
 q.push(new Z.G(3,!1))
 s.push(r)
 for(p=0;p<s.length;++p)if(n.ry.v.a.D()*40<t){if(p>=s.length)return H.j(s,p)
 m.push(s[p])}q=n.ai
-if(q==="#631db4"){r=Z.a4("Chucklevoodoos",1)
+if(q==="#631db4"){r=L.a4("Chucklevoodoos",1)
 q=r.x
 q.push(new Z.G(3,!1))
 q.push(new Z.G(3,!0))
-m.push(r)}else if(q==="#658200"){r=Z.a4("Limeade Refreshment",1)
+m.push(r)}else if(q==="#658200"){r=L.a4("Limeade Refreshment",1)
 q=r.x
 q.push(new Z.G(1,!1))
 q.push(new Z.G(1,!0))
-m.push(r)}else if(q==="#ffc3df"){r=Z.a4("'<font color='pink'>"+H.n(n.bm)+" and the Power of Looove~~~~~<3<3<3</font>'",1)
+m.push(r)}else if(q==="#ffc3df"){r=L.a4("'<font color='pink'>"+H.n(n.bm)+" and the Power of Looove~~~~~<3<3<3</font>'",1)
 q=r.x
 q.push(new Z.G(3,!1))
 q.push(new Z.G(3,!0))
@@ -17988,13 +17988,13 @@ r=o.a$
 s=r.ae(s)
 o.a$.w(t,s)
 t=o.a3
-if(t==$.y9){p=Z.a4("Rocks Fall, Everyone Dies",1)
+if(t==$.y9){p=L.a4("Rocks Fall, Everyone Dies",1)
 p.x.push(new Z.G(3,!0))
-o.S.push(p)}else if(t==$.vI){p=Z.a4("What class???",1)
+o.S.push(p)}else if(t==$.vI){p=L.a4("What class???",1)
 p.x.push(new Z.G(1,!0))
 t=o.S
 t.push(p)
-p=Z.a4("Nulzilla",2)
+p=L.a4("Nulzilla",2)
 p.x.push(new Z.G(1,!0))
 t.push(p)}if(o.bv==null)o.bv=o.ry.v.B($.ey,u.c)
 t=o.ry
@@ -18363,7 +18363,7 @@ o=new Y.dj(H.a([],q),a5,a5,a5,t,a5,P.br(p))
 o.bO(t,r)
 o.a$=o.b9()
 a4.cy=o
-n=Z.a4(a6,3)
+n=L.a4(a6,3)
 n.x.push(new Z.G(2,!0))
 C.c.h(a4.cy.Q,n)
 o="BLACK QUEEN'S RING OF ORBS "+a4.fc()+"FOLD"
@@ -18372,7 +18372,7 @@ t=new Y.dj(H.a([],q),a5,a5,a5,o,a5,P.br(p))
 t.bO(o,r)
 t.a$=t.b9()
 a4.db=t
-n=Z.a4(a6,3)
+n=L.a4(a6,3)
 n.x.push(new Z.G(2,!0))
 C.c.h(a4.db.Q,n)
 t=H.a([$.jW],s)
@@ -18380,7 +18380,7 @@ r=new Y.cW(H.a([],q),a5,a5,a5,a7,a5,P.br(p))
 r.bO(a7,t)
 r.a$=r.b9()
 a4.dx=r
-n=Z.a4(a8,3)
+n=L.a4(a8,3)
 n.x.push(new Z.G(2,!0))
 C.c.h(a4.dx.Q,n)
 r=H.a([$.jW],s)
@@ -18388,7 +18388,7 @@ p=new Y.cW(H.a([],q),a5,a5,a5,a9,a5,P.br(p))
 p.bO(a9,r)
 p.a$=p.b9()
 a4.dy=p
-n=Z.a4(a8,3)
+n=L.a4(a8,3)
 n.x.push(new Z.G(2,!0))
 C.c.h(a4.dy.Q,n)
 t=u.k
@@ -18530,7 +18530,7 @@ a=$.Q
 i.a$.w(a,100)
 i.aF=i.a5=10
 f.push(i)
-n=Z.a4("Sincere Pep Talk",3)
+n=L.a4("Sincere Pep Talk",3)
 i=n.x
 i.push(new Z.G(1,!0))
 i.push(new Z.G(1,!1))
@@ -19882,7 +19882,7 @@ n(F,"Ea",4,null,["$4"],["B_"],2,0)
 n(F,"E9",4,null,["$4"],["AZ"],1,0)
 n(F,"E8",4,null,["$4"],["AY"],2,0)})();(function inheritance(){var t=hunkHelpers.mixin,s=hunkHelpers.inherit,r=hunkHelpers.inheritMany
 s(P.b0,null)
-r(P.b0,[H.vu,J.cH,J.q7,J.d3,P.hH,P.w,H.et,P.jZ,H.ji,H.nu,P.h9,H.eT,H.rR,P.b6,H.fG,H.ei,H.hN,P.df,H.qn,H.kc,H.f7,H.hI,H.hz,H.ht,H.tT,H.cV,H.nO,H.o4,P.tU,P.nI,P.cG,P.iH,P.hA,P.fo,P.aq,P.nJ,P.dk,P.lO,P.lP,P.o0,P.ib,P.u0,P.nQ,P.hM,P.tN,P.hF,P.b_,P.aM,P.o9,P.iF,P.tr,P.tL,P.u_,P.tZ,P.dm,P.iS,P.cD,P.l0,P.ho,P.tu,P.jn,P.ay,P.bX,P.bn,P.cJ,P.hl,P.cd,P.o2,P.as,P.bs,P.e7,P.hS,P.rV,P.nZ,W.uP,W.fS,W.jj,W.iJ,W.vz,W.tW,P.tk,P.tJ,P.tO,P.bk,P.iv,P.jR,P.cY,P.np,B.eM,T.pP,Q.qO,E.ti,Q.tj,X.nF,Q.th,Y.pM,S.pO,X.on,B.bU,S.oo,N.bb,L.bt,A.nY,O.b1,T.bj,M.nU,Y.lt,E.nP,M.eS,X.cP,X.oN,M.p7,D.dw,D.jf,D.je,Z.fH,Z.G,E.hh,E.y,Z.oY,U.rL,Z.pN,B.er,A.cw,A.o3,S.nR,X.ql,X.pF,N.r7,Y.kR,N.eC,U.c,Z.r1,Y.eE,K.ri,K.qD,G.ly,K.lH,U.c7,X.t,G.db,L.rr,B.tf,A.eh,B.d6,B.cE,A.d8,Z.fP,Z.ps,F.fa,F.h6,D.lg,A.cn,Y.eD,L.fB,L.e5,V.li,V.hk,O.dh,D.bf,E.o_,E.lK,B.cA,Q.aX,B.fm,Q.ba])
+r(P.b0,[H.vu,J.cH,J.q7,J.d3,P.hH,P.w,H.et,P.jZ,H.ji,H.nu,P.h9,H.eT,H.rR,P.b6,H.fG,H.ei,H.hN,P.df,H.qn,H.kc,H.f7,H.hI,H.hz,H.ht,H.tT,H.cV,H.nO,H.o4,P.tU,P.nI,P.cG,P.iH,P.hA,P.fo,P.aq,P.nJ,P.dk,P.lO,P.lP,P.o0,P.ib,P.u0,P.nQ,P.hM,P.tN,P.hF,P.b_,P.aM,P.o9,P.iF,P.tr,P.tL,P.u_,P.tZ,P.dm,P.iS,P.cD,P.l0,P.ho,P.tu,P.jn,P.ay,P.bX,P.bn,P.cJ,P.hl,P.cd,P.o2,P.as,P.bs,P.e7,P.hS,P.rV,P.nZ,W.uP,W.fS,W.jj,W.iJ,W.vz,W.tW,P.tk,P.tJ,P.tO,P.bk,P.iv,P.jR,P.cY,P.np,B.eM,T.pP,Q.qO,E.ti,Q.tj,X.nF,Q.th,Y.pM,S.pO,X.on,B.bU,S.oo,N.bb,L.bt,A.nY,O.b1,T.bj,M.nU,Y.lt,E.nP,M.eS,X.cP,X.oN,M.p7,D.dw,D.jf,D.je,Z.fH,L.fP,L.ps,Z.G,E.hh,E.y,Z.oY,U.rL,Z.pN,B.er,A.cw,A.o3,S.nR,X.ql,X.pF,N.r7,Y.kR,N.eC,U.c,Z.r1,Y.eE,K.ri,K.qD,G.ly,K.lH,U.c7,X.t,G.db,L.rr,B.tf,A.eh,B.d6,B.cE,A.d8,F.fa,F.h6,D.lg,A.cn,Y.eD,L.fB,L.e5,V.li,V.hk,O.dh,D.bf,E.o_,E.lK,B.cA,Q.aX,B.fm,Q.ba])
 r(J.cH,[J.q6,J.k_,J.L,J.O,J.dz,J.dA,H.kS,H.hd,W.j8,W.im,W.oX,W.j_,W.z,W.qv,W.qH,W.nW,W.qP,W.oa,P.eP])
 r(J.L,[J.la,J.dl,J.dd,F.qe,R.dW,R.qS,R.qR,S.dF,S.t1,S.t2,S.t3,S.p4,S.p8,S.oP,S.t6,S.t7,S.iP,S.rp,S.rq,S.om,S.jo,S.is,S.oM,S.oL,S.p6,S.nm,S.oT,S.ev,S.qA,S.qC,S.rl,S.lA,S.qI,S.qJ,S.py,S.pz,S.qL,S.qE,S.oH,S.rP,S.rQ,S.rO])
 s(J.q8,J.O)

@@ -1,8 +1,8 @@
+import "dart:async";
 import "dart:html";
 import '../../GameEntities/Stats/sampler/statsampler.dart';
 import "../../SBURBSim.dart";
 import "../../navbar.dart";
-import "dart:async";
 /*
   Each way the sim is able to be used inherits from this abstract class.
 
@@ -61,9 +61,6 @@ abstract class SimController {
             e.remove();
         });
     }
-
-
-
 
     void scratchEasterEggCallBack(Session s) {
         //initializePlayers(s.players, s); //will take care of overriding players if need be.

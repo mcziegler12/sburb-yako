@@ -1,14 +1,14 @@
+import 'dart:html';
+import '../../Fraymotif.dart';
+import '../../FraymotifEffect.dart';
 import '../../GameEntities/GameEntity.dart';
 import '../../GameEntities/NPCS.dart';
 import '../../GameEntities/Stats/stat.dart';
 import '../../GameEntities/player.dart';
+import "../../PlayerSpriteHandler.dart";
 import '../../SessionEngine/session.dart';
-import '../../fraymotif.dart';
-import '../../FraymotifEffect.dart';
 
 import "EntitySection.dart";
-import 'dart:html';
-import "../../PlayerSpriteHandler.dart";
 
 class PlayerSection extends EntitySection {
 

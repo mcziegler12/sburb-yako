@@ -1,7 +1,7 @@
+import "dart:async";
+import 'dart:html';
 import '../../SBURBSim.dart';
 import '../../navbar.dart';
-import 'dart:html';
-import "dart:async";
 
 Future<Null> main() async {
     doNotRender = true;

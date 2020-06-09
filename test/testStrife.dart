@@ -10,7 +10,7 @@ import "JRTestSuite.dart";
 part "../web/scripts/GameEntities/player.dart";
 part "../web/scripts/GameEntities/NPCS.dart";
 part "../web/scripts/Strife.dart";
-part "../web/scripts/fraymotif.dart";
+part "../web/scripts/Fraymotif.dart";
 part "../web/scripts/random_tables.dart"; //needed for global functions
 part "JRTestSuite.dart";
 part "../web/scripts/Afterlife.dart";
