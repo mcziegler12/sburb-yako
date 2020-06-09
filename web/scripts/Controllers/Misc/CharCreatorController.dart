@@ -13,9 +13,6 @@ Future<Null> main() async
   loadNavbar();
   await globalInit();
   window.onError.listen((Event event){
-    ErrorEvent e = event as ErrorEvent;
-    //String msg, String url, lineNo, columnNo, error
-
     return;
   });
   new CharCreatorController();
@@ -60,11 +57,11 @@ void renderPlayersForEditing() {
   doesn't do sim stuff, it's overrides are errors, but need it to do a few other things. whatever.
  */
 class CharCreatorController extends SimController {
+  CharCreatorController() : super() {  }
+  
   CharacterCreatorHelper charCreatorHelperGlobalVar;
   int numURLS = 0;
 
-  CharCreatorController() : super() {
-  }
 
   //don't actually start the session, but get players ready.
   @override

@@ -565,6 +565,7 @@ images/Doom.png
 images/DoomBig.png
 images/Dream.png
 images/DreamBig.png
+images/Hair/hair.bundle
 images/Hair/hair1.png
 images/Hair/hair10.png
 images/Hair/hair11.png
@@ -1801,6 +1802,7 @@ jr_image_text.txt
 landing.html
 listItems.html
 mainLanding.html
+manifest/manifest.txt
 manifest/sourcemanifest.txt
 manifest/testtext.txt
 manifest/testtext2.txt
